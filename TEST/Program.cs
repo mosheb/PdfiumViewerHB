@@ -24,6 +24,7 @@ namespace TEST
                 var img = pdoc.Render(pagenum, 96, 96, false);
 
                 //get single page as new pdf doc (byte[])-----------
+                //todo: move implemenation into pdfdocument class
                 var pdfpage = pdoc.GetPage(pagenum);
 
                 //rasterize page area-------------------------------
